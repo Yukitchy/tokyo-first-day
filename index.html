@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokyo First Morning</title>
+<meta name="description" content="A three-hour Sunday morning in Asakusa for Deborah and Curtis: the station, Senso-ji, a convenience store and a small lunch.">
+<meta property="og:title" content="Your first morning in Tokyo">
+<meta property="og:description" content="Sunday, January 10, 2027. Four everyday places in Asakusa, with Yoshi, from 9:30 to about 12:30.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yukitchy.github.io/perry-first-day/img/kaminarimon.jpg">
+<meta property="og:url" content="https://yukitchy.github.io/perry-first-day/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%231E2A4A%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2214%22 fill=%22%23C8A35A%22/%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#1E2A4A;
+  --indigo-2:#2B3960;
+  --cream:#F6F0E2;
+  --cream-2:#EDE4CE;
+  --gold:#B8945A;
+  --gold-ink:#7E5F26;
+  --ink:#1E2A4A;
+  --serif:"Fraunces","Playfair Display",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;word-break:auto-phrase;overflow-wrap:break-word}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink)}
+
+/* hero */
+.hero{position:relative;background:var(--indigo);color:var(--cream);overflow:hidden}
+.hero{min-height:clamp(420px,62vh,600px);display:flex;align-items:flex-end;background:radial-gradient(120% 80% at 85% 0%,rgba(184,146,74,.28),transparent 60%),repeating-linear-gradient(90deg,rgba(243,238,226,.05) 0 1px,transparent 1px 72px),var(--indigo)}
+.hero-text{position:relative;width:100%;padding:96px 0 36px}
+.hero .kicker{color:var(--gold)}
+.hero h1{font-size:clamp(38px,8vw,84px);font-weight:700;margin:12px 0 18px;max-width:12em}
+.hero h1 span{display:block}
+.byline{font-size:14px;color:var(--cream-2);border-top:1px solid var(--gold);padding-top:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.byline b{font-weight:600;color:var(--cream)}
+
+/* lede */
+.lede{padding:44px 0 8px}
+.lede p{font-family:var(--serif);font-size:clamp(20px,3vw,26px);line-height:1.5;max-width:30em}
+
+/* glance */
+.glance{margin:36px 0 0;border-top:2px solid var(--indigo);border-bottom:1px solid var(--indigo)}
+.glance .wrap{display:grid;grid-template-columns:1fr}
+.glance .col{padding:20px 0;border-bottom:1px solid rgba(30,42,74,.2)}
+.glance .col:last-child{border-bottom:0}
+.glance h2{font-size:22px;margin:6px 0 8px}
+.glance p{font-size:15px}
+
+/* stops */
+.stop{padding:56px 0;border-bottom:1px solid rgba(30,42,74,.18)}
+.stop .wrap{display:grid;grid-template-columns:1fr;gap:8px}
+.num{font-family:var(--serif);font-weight:700;font-size:clamp(96px,26vw,200px);line-height:.85;color:transparent;-webkit-text-stroke:1.5px var(--gold);letter-spacing:-.03em}
+.time{margin-top:6px}
+.stop h2{font-size:clamp(30px,5vw,44px);margin:6px 0 14px}
+.stop p{max-width:34em}
+.try{margin-top:18px;padding:12px 0 0;border-top:1px solid var(--gold);font-size:15px;max-width:34em}
+.try b{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--gold-ink);margin-right:6px}
+
+/* pull quote */
+.quote{background:var(--indigo);color:var(--cream);padding:72px 0;text-align:center}
+.quote blockquote{margin:0 auto;max-width:15em;font-family:var(--serif);font-weight:600;font-size:clamp(34px,7vw,64px);line-height:1.12}
+.quote p{margin:22px auto 0;max-width:30em;font-size:16px;color:var(--cream-2)}
+.quote .rule{width:56px;height:2px;background:var(--gold);margin:0 auto 28px}
+
+/* glossary */
+.gloss{padding:64px 0 24px}
+.gloss h2{font-size:clamp(28px,4.5vw,40px);margin:8px 0 8px}
+.gloss .sub{font-size:15px;max-width:32em}
+.gloss dl{margin:28px 0 0;border-top:2px solid var(--indigo)}
+.gloss .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(30,42,74,.2);align-items:baseline}
+.gloss dt{font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.25}
+.gloss dd{margin:0;font-size:15px}
+
+/* after */
+.after{margin-top:48px;background:var(--cream-2);padding:60px 0}
+.after h2{font-size:clamp(28px,4.5vw,40px);margin:8px 0 18px}
+.after p{max-width:36em}
+.after p+p{margin-top:14px}
+.take{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:0;border-top:2px solid var(--indigo)}
+.take li{padding:14px 0;border-bottom:1px solid rgba(30,42,74,.2);font-size:16px}
+.take b{font-family:var(--serif);font-weight:600;font-size:18px;display:block}
+.days{margin-top:22px;font-size:15px;color:var(--indigo-2)}
+
+footer{background:var(--indigo);color:var(--cream-2);padding:28px 0;font-size:13px}
+
+@media(min-width:768px){
+  body{font-size:18px}
+  .wrap{padding:0 32px}
+  .hero-text{padding-bottom:56px}
+  .glance .wrap{grid-template-columns:repeat(3,1fr);gap:0}
+  .glance .col{border-bottom:0;border-right:1px solid rgba(30,42,74,.2);padding:26px 28px}
+  .glance .col:first-child{padding-left:0}
+  .glance .col:last-child{border-right:0}
+  .stop .wrap{grid-template-columns:240px 1fr;gap:48px;align-items:start}
+  .stop:nth-of-type(even) .wrap{grid-template-columns:1fr 240px}
+  .stop:nth-of-type(even) .num{order:2;text-align:right}
+  .num{-webkit-text-stroke-width:2px}
+  .gloss .row{grid-template-columns:240px 1fr;gap:32px;padding:18px 0}
+  .take{grid-template-columns:repeat(3,1fr)}
+  .take li{border-bottom:0;border-right:1px solid rgba(30,42,74,.2);padding:18px 24px}
+  .take li:first-child{padding-left:0}
+  .take li:last-child{border-right:0}
+}
+
+.hero{background:linear-gradient(180deg,rgba(30,42,74,.55) 0%,rgba(30,42,74,.78) 55%,rgba(30,42,74,.94) 100%),url(img/kaminarimon.jpg) center 40%/cover,var(--indigo);min-height:clamp(480px,72vh,680px)}
+.ph{margin:0}
+.ph img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--indigo)}
+.ph figcaption{font-size:13px;color:var(--indigo-2);border-top:1px solid var(--gold);margin-top:8px;padding-top:6px;font-family:var(--serif);font-style:italic}
+.split{display:grid;gap:22px}
+.stack{display:grid;gap:18px;align-content:start}
+.mapbox{margin-top:28px;max-width:100%}
+.mapbox iframe{display:block;width:100%;height:260px;border:1px solid var(--indigo)!important;background:var(--cream-2)}
+.mapbox a{display:inline-block;margin-top:8px;font-size:14px;font-weight:600;color:var(--gold-ink);text-decoration:underline;text-underline-offset:3px}
+.mosaic{display:grid;gap:14px;margin-top:28px}
+.credits{font-size:11px;line-height:1.6;color:var(--cream-2);opacity:.85;margin-top:14px;padding-top:12px;border-top:1px solid rgba(184,148,90,.5)}
+.credits a{color:var(--cream);text-underline-offset:2px}
+@media(min-width:768px){
+  .split{grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .stop:nth-of-type(even) .split .txt{order:2}
+  .mosaic{grid-template-columns:2fr 1fr;grid-template-rows:auto auto}
+  .mosaic .ph:first-child{grid-row:span 2}
+  .mosaic .ph:first-child img{aspect-ratio:auto;height:100%;min-height:340px}
+  .mosaic .ph:not(:first-child) img{aspect-ratio:4/3}
+  .mapbox iframe{height:auto;aspect-ratio:16/10}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-text">
+    <div class="wrap">
+      <div class="kicker">Tokyo, day one &middot; 初日</div>
+      <h1><span>Your first morning</span> <span>in Tokyo</span></h1>
+      <div class="byline">
+        <span>For <b>Deborah &amp; Curtis</b></span>
+        <span>Sunday, January 10, 2027</span>
+        <span>Guided by <b>Yoshi</b></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="lede">
+    <div class="wrap">
+      <p>Three hours in Asakusa, 9:30 to about 12:30. We visit four everyday places you will use again this week, and you do each small thing yourselves, so it feels familiar by Monday.</p>
+    </div>
+  </section>
+
+  <section class="glance" aria-label="At a glance">
+    <div class="wrap">
+      <div class="col">
+        <div class="kicker">When</div>
+        <h2>9:30 to 12:30</h2>
+        <p>Sunday morning. Senso-ji gets busy after 11, so the temple comes early.</p>
+      </div>
+      <div class="col">
+        <div class="kicker">Where</div>
+        <h2>Asakusa Station</h2>
+        <p>Tokyo Metro Ginza Line, Exit 1, near Kaminarimon Gate. Yoshi will send the exact spot and a photo the day before.</p>
+      </div>
+      <div class="col">
+        <div class="kicker">Bring</div>
+        <h2>Warm and ready</h2>
+        <p>A warm coat and comfortable shoes (2&ndash;10&deg;C, cold and dry). A small towel or handkerchief. Some cash, including coins for the temple.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stop">
+    <div class="wrap">
+      <div class="num" aria-hidden="true">01</div>
+      <div>
+<div class="split"><div class="txt">
+        <div class="kicker time">9:30 &middot; The station</div>
+        <h2>Get a card, then ride</h2>
+        <p>We buy and top up an IC card (Suica or PASMO). On the escalator, Tokyo stands on the left. In the line for the train, you wait your turn, and inside the car it is quiet. We ride one stop on the Ginza Line together and come back.</p>
+        <p class="try"><b>Try it.</b>Top up your own card at the machine and tap through the gate.</p></div>
+<div class="stack"><figure class="ph "><img src="img/station.jpg" width="1400" height="933" alt="Asakusa Station sign on the Ginza Line, G19" loading="lazy"><figcaption>Asakusa Station, Ginza Line (G19)</figcaption></figure><figure class="ph "><img src="img/ic-card.jpg" width="1400" height="933" alt="A hand tapping an IC card on a ticket gate reader" loading="lazy"><figcaption>Tap your card on the reader at the gate</figcaption></figure></div></div><div class="mapbox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200!2d139.7971675!3d35.7098669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec690127e2f:0xf41f021a3a02cff0!2sAsakusa%20Sta.!5e0!3m2!1sen!2sjp!4v1792226000000!5m2!1sen!2sjp" width="100%" height="260" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Asakusa Sta." allowfullscreen></iframe><a href="https://www.google.com/maps/search/?api=1&query=Asakusa%20Sta.%20Asakusa" target="_blank" rel="noopener">Open in Google Maps</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stop">
+    <div class="wrap">
+      <div class="num" aria-hidden="true">02</div>
+      <div>
+<div class="txt">
+        <div class="kicker time">10:15 &middot; Senso-ji</div>
+        <h2>Temple first, shrine next door</h2>
+        <p>We walk through Kaminarimon and down Nakamise street, then wash our hands at the water pavilion (chozuya). Fan some incense smoke toward you, toss a coin and bow quietly with your hands together. Senso-ji is a Buddhist temple, so there is no clapping here. At a Shinto shrine you bow twice, clap twice and bow once. Asakusa Shrine is right next door, so you practise both and feel the difference.</p>
+        <p class="try"><b>Try it.</b>Draw an omikuji fortune. If it is a bad one, tie it on the rack and leave it there.</p></div>
+<div class="mosaic"><figure class="ph "><img src="img/nakamise.jpg" width="1400" height="933" alt="Nakamise street leading to Hozomon Gate" loading="lazy"><figcaption>Nakamise street, walking toward Hozomon Gate</figcaption></figure><figure class="ph "><img src="img/jokoro.jpg" width="1400" height="933" alt="People fanning smoke from the large incense burner" loading="lazy"><figcaption>The incense burner: fan the smoke toward you</figcaption></figure><figure class="ph "><img src="img/sensoji.jpg" width="1400" height="933" alt="Senso-ji main hall with a crowd in winter coats" loading="lazy"><figcaption>Senso-ji main hall</figcaption></figure></div><div class="mapbox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200!2d139.7966553!3d35.7147651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec1a4463df1:0x6c0d289a8292810d!2sSens%C5%8D-ji!5e0!3m2!1sen!2sjp!4v1792226000000!5m2!1sen!2sjp" width="100%" height="260" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Sensō-ji" allowfullscreen></iframe><a href="https://www.google.com/maps/search/?api=1&query=Sens%C5%8D-ji%20Asakusa" target="_blank" rel="noopener">Open in Google Maps</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stop">
+    <div class="wrap">
+      <div class="num" aria-hidden="true">03</div>
+      <div>
+<div class="split"><div class="txt">
+        <div class="kicker time">11:15 &middot; The convenience store</div>
+        <h2>Pay, carry, move on</h2>
+        <p>Money goes on the small tray at the register. There are almost no bins on the street, so you carry your trash until you find one. In winter there is a shelf of hot drinks, which is useful on a cold morning.</p>
+        <p class="try"><b>Try it.</b>Buy a hot drink and say &ldquo;Fukuro wa daijoubu desu&rdquo; to turn down the bag.</p></div>
+<figure class="ph "><img src="img/konbini.jpg" width="1400" height="933" alt="A 7-Eleven convenience store on a Tokyo street corner" loading="lazy"><figcaption>A convenience store on the corner</figcaption></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stop">
+    <div class="wrap">
+      <div class="num" aria-hidden="true">04</div>
+      <div>
+<div class="split"><div class="txt">
+        <div class="kicker time">11:45 &middot; A small lunch</div>
+        <h2>Sit down, order, pay</h2>
+        <p>Yoshi picks a small local restaurant, either a ticket machine or a counter place. Two chopstick rules: do not stand them upright in rice, and do not pass food from chopsticks to chopsticks. Call staff with &ldquo;Sumimasen&rdquo;, pay at the register on your way out, and do not tip.</p>
+        <p class="try"><b>Try it.</b>Call the staff yourself and ask for the bill.</p></div>
+<figure class="ph "><img src="img/lunch.jpg" width="1400" height="933" alt="A Japanese set meal on a tray with rice, miso soup, a main and salad" loading="lazy"><figcaption>A set meal: rice, miso soup, main, salad</figcaption></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <div class="rule"></div>
+      <blockquote>You try it, not the guide.</blockquote>
+      <p>That is the only rule. Every place on this morning is a place you will use again this week.</p>
+    </div>
+  </section>
+
+  <section class="gloss">
+    <div class="wrap">
+      <div class="kicker">Five phrases</div>
+      <h2>Words worth knowing</h2>
+      <p class="sub">You will use all five before lunch.</p>
+      <dl>
+        <div class="row"><dt>Sumimasen</dt><dd>Excuse me / sorry</dd></div>
+        <div class="row"><dt>Arigatou gozaimasu</dt><dd>Thank you</dd></div>
+        <div class="row"><dt>Kore kudasai</dt><dd>This one, please</dd></div>
+        <div class="row"><dt>Fukuro wa daijoubu desu</dt><dd>No bag, thanks</dd></div>
+        <div class="row"><dt>Okaikei onegaishimasu</dt><dd>The bill, please</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="after">
+    <div class="wrap">
+      <div class="kicker">After 12:30</div>
+      <h2>What you take home</h2>
+      <p>We finish at about 12:30. The rest of the week is yours, and you have three things to lean on.</p>
+      <ul class="take">
+        <li><b>Manners License</b>A printed card with your name on it.</li>
+        <li><b>Cheat sheet</b>One page on your phone, with everything from this morning.</li>
+        <li><b>Yoshi&rsquo;s tips</b>Suggestions for the rest of your week.</li>
+      </ul>
+      <p class="days">You are with Yoshi again on January 11 and 12. Curtis has an Akihabara day with Yuuki on January 13.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Class format by Yuuki / AnimeSensei. Guided on the day by Yoshi.</div>
+  <div class="wrap credits">Photo credits: Kaminarimon: <a href="https://commons.wikimedia.org/wiki/File:Kaminarimon_(outer_gate),_Sensoji_Temple,_Akakusa,_Tokyo.jpg" target="_blank" rel="noopener">Daderot</a>, Public domain &middot; Station sign: <a href="https://commons.wikimedia.org/wiki/File:Asakusa_Sta._Sign,_Ginza_Line,_Tokyo_130810_1.jpg" target="_blank" rel="noopener">DXR</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a> &middot; IC card: <a href="https://commons.wikimedia.org/wiki/File:Ainokaze_Toyama_Railway_uozu_station_Suica.JPG" target="_blank" rel="noopener">タチヤマカムイ</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a> &middot; Nakamise: <a href="https://commons.wikimedia.org/wiki/File:Hozomon_Gate,_Tokyo,_South_view_from_Nakamise_Shopping_Street_20190420_1.jpg" target="_blank" rel="noopener">DXR</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a> &middot; Incense burner: <a href="https://commons.wikimedia.org/wiki/File:Sensoji-_Bathing_Smoke.jpg" target="_blank" rel="noopener">Dick Thomas Johnson</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a> &middot; Senso-ji: <a href="https://commons.wikimedia.org/wiki/File:Hondo_(Main_Hall)_of_Sensoji_Temple.jpg" target="_blank" rel="noopener">そらみみ</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a> &middot; Convenience store: <a href="https://commons.wikimedia.org/wiki/File:7-Eleven_store_Toyosu_store_Tokyo_Japan_20140319.jpg" target="_blank" rel="noopener">LERK</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a> &middot; Lunch: <a href="https://commons.wikimedia.org/wiki/File:Bulgogi_set_meal_of_Matsuya.jpg" target="_blank" rel="noopener">毒島みるく</a>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a></div>
+</footer>
+
+</body>
+</html>
